@@ -22,3 +22,14 @@ Host Level Metrics:
 * Network
 * Disk
 * Status Check
+
+### EBS
+`VolumeReadOps`/`VolumeWriteOps` = Total number of IO Ops in a specific period of time
+`VolumeQueueLength` - The number of read and write operations requests waiting to be completed in a specified period of time
+
+Volume statuses:
+
+* `ok`
+* `warning`
+* `impaired`
+* `insufficient-data`
