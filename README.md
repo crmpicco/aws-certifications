@@ -33,3 +33,8 @@ Volume statuses:
 * `warning`
 * `impaired`
 * `insufficient-data`
+
+### ELB
+
+Access logs - capture detailed information about requests sent to your load balancer.
+They can store data where the EC2 instance has been deleted.
