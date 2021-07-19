@@ -38,3 +38,23 @@ Volume statuses:
 
 Access logs - capture detailed information about requests sent to your load balancer.
 They can store data where the EC2 instance has been deleted.
+
+### Elasticache
+
+#### Memcached
+* Multi-threaded
+* Can handle loads of up to 90%
+* SwapUsage should be around 0 most of the time and should not exceed 50MB.
+* Scale up OR out
+
+#### Redis
+* Not multi-threaded
+* No SwapUsage metric
+* Scale out only (by adding read replicas)
+
+Swap File - the amount of disk storag space reserved on disk if your computer runs out of RAM.
+Swap Usage - the amount of the Swap file that is used
+
+Eviction - occurs when a new item is added and an old item mist be removed due to a lack of free space in the system
+
+Concurrent connections - set and alarm on this number
