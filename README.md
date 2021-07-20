@@ -17,6 +17,8 @@ Host Level metrics: CPU, Network, Disk, Status Check
 
 Can be used on premise
 
+Dashboards are multi-region and can display any widget to any region.
+
 Host Level Metrics:
 * CPU
 * Network
