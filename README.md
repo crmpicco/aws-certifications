@@ -54,9 +54,22 @@ They can store data where the EC2 instance has been deleted.
 * No SwapUsage metric
 * Scale out only (by adding read replicas)
 
-Swap File - the amount of disk storag space reserved on disk if your computer runs out of RAM.
+Swap File - the amount of disk storage space reserved on disk if your computer runs out of RAM.
 Swap Usage - the amount of the Swap file that is used
 
 Eviction - occurs when a new item is added and an old item mist be removed due to a lack of free space in the system
 
 Concurrent connections - set and alarm on this number
+
+## AWS Organizations
+
+### Central Management
+Allows you to manage multiple AWS accounts at once. You can create groups of accounts and then apply policies to those groups.
+
+### Control Access
+Create Service Control Policies (SCPs) that centrally control AWS service use across multiple AWS accounts. SCP will override IAM.
+
+### Automate AWS Account Creation
+
+### Consolidated Billing
+Allows you to set up a single payment method for all the AWS accounts in your organization
