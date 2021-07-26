@@ -73,3 +73,10 @@ Create Service Control Policies (SCPs) that centrally control AWS service use ac
 
 ### Consolidated Billing
 Allows you to set up a single payment method for all the AWS accounts in your organization
+
+## Tagging & Resource Groups
+
+Tags - Key Value Pairs attached to AWS resources. Case sensitive.
+
+Resource Group - a way to group your tags. They make it easy to group your resources using the tags that are assigned to them.
+They contain information such as region, name, health checks.
