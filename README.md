@@ -80,3 +80,10 @@ Tags - Key Value Pairs attached to AWS resources. Case sensitive.
 
 Resource Group - a way to group your tags. They make it easy to group your resources using the tags that are assigned to them.
 They contain information such as region, name, health checks.
+
+## Cost Explorer & Cost Allocation Tags
+### Cost Explorer 
+* a tool that enables you to view and analyze your costs and usage
+* use tags to tag your resources
+* active 'Cost Allocation Tags'
+* you can view data for up to the last 13 months
