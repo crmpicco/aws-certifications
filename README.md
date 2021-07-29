@@ -87,3 +87,15 @@ They contain information such as region, name, health checks.
 * use tags to tag your resources
 * active 'Cost Allocation Tags'
 * you can view data for up to the last 13 months
+
+## AWS Config
+Fully managed service that provides you with an AWS resource inventory, configuration history and config change notifications
+Enables:
+* Compliance auditing
+* Security analysis
+* Resource tracking
+
+Provides:
+* Config snapshots and logs config changes
+* Automated compliance checking
+
