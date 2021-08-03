@@ -99,3 +99,6 @@ Provides:
 * Config snapshots and logs config changes
 * Automated compliance checking
 
+## Health Dashboards
+* [Service Health Dashboard](https://status.aws.amazon.com/)
+* Personal Health Dashboard
