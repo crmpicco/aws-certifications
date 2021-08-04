@@ -1,17 +1,17 @@
-![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/300px-Amazon_Web_Services_Logo.svg.png "AWS")
+<span style="display:block; text-align:center">![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/300px-Amazon_Web_Services_Logo.svg.png "AWS")</span>
 
-# AWS Certified SysOps Administrator - Associate
+# AWS Certified SysOps Administrator - Associate (SOA-C02)
 
 ## CloudWatch
-Monitoring service to monitor AWS resources and applications run on AWS
+Monitoring service to monitor performance of AWS resources and applications run on AWS
 
 You can retrieve data using `GetMetricStatistics` API
 
 You can store log data in CloudWatch Logs for as long as you want. Stored indefinitely by default.
 
-Custom metrics - minimum granularity is 1 minute
-
-Standard monitoring - 5 minute metric granularity
+### Metric Granularity
+1 minute for detailed monitoring
+5 minutes for standard monitoring
 
 Host Level metrics: CPU, Network, Disk, Status Check
 
@@ -55,6 +55,7 @@ They can store data where the EC2 instance has been deleted.
 * Scale out only (by adding read replicas)
 
 Swap File - the amount of disk storage space reserved on disk if your computer runs out of RAM.
+
 Swap Usage - the amount of the Swap file that is used
 
 Eviction - occurs when a new item is added and an old item mist be removed due to a lack of free space in the system
@@ -98,6 +99,8 @@ Enables:
 Provides:
 * Config snapshots and logs config changes
 * Automated compliance checking
+
+AWS Config requires an IAM role with read only permissions to the recorded resources
 
 ## Health Dashboards
 * [Service Health Dashboard](https://status.aws.amazon.com/)
