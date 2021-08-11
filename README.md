@@ -105,3 +105,7 @@ AWS Config requires an IAM role with read only permissions to the recorded resou
 ## Health Dashboards
 * [Service Health Dashboard](https://status.aws.amazon.com/)
 * Personal Health Dashboard
+
+## EC2 Launch Issues
+* `InstanceLimitExceeded` - you have reached the limit on the number of instances you can launch in a region. There is a 20 limit per region default. You can request an increase.
+* `InsufficientInstanceCapacity` - AWS does not currently have enough available on-demand capacity to service your request.
