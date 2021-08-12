@@ -2,6 +2,8 @@
 
 # AWS Certified SysOps Administrator - Associate (SOA-C02)
 
+# Monitoring & Reporting
+
 ## CloudWatch
 Monitoring service to monitor performance of AWS resources and applications run on AWS
 
@@ -106,6 +108,19 @@ AWS Config requires an IAM role with read only permissions to the recorded resou
 * [Service Health Dashboard](https://status.aws.amazon.com/)
 * Personal Health Dashboard
 
+# Deployment & Provisioning
+
 ## EC2 Launch Issues
 * `InstanceLimitExceeded` - you have reached the limit on the number of instances you can launch in a region. There is a 20 limit per region default. You can request an increase.
 * `InsufficientInstanceCapacity` - AWS does not currently have enough available on-demand capacity to service your request.
+
+## EBS Volumes & IOPS
+### EBS SSD IOPS
+* gp2 - General Purpose, boot volumes
+* io1 - Provisioned IOPS (Input Output Operations/Second), I/O intensive
+
+Problem: I/O requests will start queueing if you are using gp2 and your workload exceeds the IOPS limit of the gp2 volume
+
+Potential solutions:
+* For gp2, increase the size of your volume
+* Change your storage class to Provisioned IOPS
