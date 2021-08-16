@@ -23,3 +23,24 @@ Allows you to connect to your EC2 instances using SSH or RDP
 Allows you to safely administer your EC2 instances without exposing them to the internet
 
 Ports should be limited to SSH and RDP access
+
+## Elastic Load Balancers (ELB)
+
+### Application Load Balancer (ALB)
+* Content/route-based 
+* Layer 7
+* Application-aware
+* You can send specific requests to specific web servers
+
+### Network Load Balancer (NLB)
+* Layer 4, transport-layer
+* For super-fast, extreme performance
+* Most expensive
+* Capable of handling millions of requests per second
+
+### Classic Load Balancer (CLB)
+* Legacy, not recommended
+* You can load balance at layer 4 and 7
+* Features are basic, e.g. `X-Forwarded-For` headers and sticky sessions
+
+Pre-warm your load balancers to avoid overloading your ELB. Pre-warming will configure the ELB to the appropriate level of capacity based on the traffic that you expect.
