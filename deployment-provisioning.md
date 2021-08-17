@@ -44,3 +44,27 @@ Ports should be limited to SSH and RDP access
 * Features are basic, e.g. `X-Forwarded-For` headers and sticky sessions
 
 Pre-warm your load balancers to avoid overloading your ELB. Pre-warming will configure the ELB to the appropriate level of capacity based on the traffic that you expect.
+
+### ELB Error Messages
+* 4xx message - something has gone wrong on the client side
+* 5xx message - server side errors
+
+400 - Bad/malformed request
+
+401 - Unauthorized, user access denied
+
+403 - Forbidden, request blocked by WAF ACL
+
+460 - Client closed connection before the ELB could respond
+
+463 - ELB received `X-Forwarded-For` header with > 30 IPs
+
+500 - Internal Server Error
+
+502 - Bad Gateway. Application server closed the connection or sent back a malformed response
+
+503 - Service unavailable, no registered targets
+
+504 - Gateway timeout. Application is not responding
+
+561 - Unauthorized, received an error code from the ID provider when attempting to authenticate a user
