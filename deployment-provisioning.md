@@ -68,3 +68,22 @@ Pre-warm your load balancers to avoid overloading your ELB. Pre-warming will con
 504 - Gateway timeout. Application is not responding
 
 561 - Unauthorized, received an error code from the ID provider when attempting to authenticate a user
+
+### ELB CloudWatch Metrics
+ELBs publish metrics to CloudWatch by default for the load balancer itself **and** for the back-end instances.
+
+Metrics are gathered at 60 second intervals
+
+`BackendConnectionErrors` - number of unsuccessful connections to backend instances
+
+`HealthyHostCount` - number of healthy instances registered
+
+`UnHealthyHostCount` - number of unhealthy instances
+
+`Latency` - number of seconds taken for registered instance to respond / connect
+
+`RequestCount` - number of requests completed / connections made during the specified interval
+
+`SurgeQueueLength` - number of pending requests (_Classic Load Balancer only_)
+
+`SpilloverCount` - number of requests rejected because the surge queue is full (_Classic Load Balancer only_) 
