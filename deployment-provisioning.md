@@ -86,4 +86,15 @@ Metrics are gathered at 60 second intervals
 
 `SurgeQueueLength` - number of pending requests (_Classic Load Balancer only_)
 
-`SpilloverCount` - number of requests rejected because the surge queue is full (_Classic Load Balancer only_) 
+`SpilloverCount` - number of requests rejected because the surge queue is full (_Classic Load Balancer only_)
+
+## Systems Manager (SSM)
+A management tool which gives you visibility and control over your AWS infrastructure
+
+Integrates with CloudWatch dashboards
+
+Run Command
+* allows you to run pre-defined commands on one or more EC2 instances without needing to log in to each one
+* attach/detach EBS volumes
+* run a shell script
+* run an Ansible playbook
