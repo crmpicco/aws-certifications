@@ -98,3 +98,9 @@ Run Command
 * attach/detach EBS volumes
 * run a shell script
 * run an Ansible playbook
+
+## Placement Groups
+Allow you to control how your instances are deployed
+* Cluster - instances all created in single AZ
+* Partition - instances are created in logical segments called partitions
+* Spread - each instance is created in a separate rack with independent network and power
