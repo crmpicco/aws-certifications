@@ -1,3 +1,5 @@
+_The SOA-C01 exam has been deprecated_
+
 # Deployment & Provisioning
 
 ## EC2 Launch Issues
