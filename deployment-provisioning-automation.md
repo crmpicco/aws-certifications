@@ -32,3 +32,13 @@ sc1 - Cold HDD
 * Burstable up to 80MB/s per TB
 * Used when performance is not a factor
 * Cannot be a boot volume
+
+## What is a Bastion Host?
+
+Public-facing instance which enables you to SSH or RDP to your private instances from an untrusted network
+
+Located in a public subnet and is reeachable from the internet
+
+Security hardened with unnecessary services removed
+
+AKA a "jumpbox"
