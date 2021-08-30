@@ -42,3 +42,27 @@ Located in a public subnet and is reeachable from the internet
 Security hardened with unnecessary services removed
 
 AKA a "jumpbox"
+
+## Exploring Elastic Load Balancer
+
+Load balancer - distributes network traffic across a group of servers
+
+ALB - Application Load Balancer. Intelligent load balancing.
+
+ELB - Network Load Balancer. High-performance load balancing for TCP traffic.
+
+CLB - Classic Load Balancer. Legacy option.
+
+Gateway Load Balancer - allows you to load balance workloads for third-party virtual appliances running in AWS
+
+OSI 7 Layer Model
+
+| Layer        | Use           |
+| ------------- |:-------------:|
+| 7 | Application |
+| 6 | Presentation      |
+| 5 | Session      |
+| 4 | Transport      |
+| 3 | Network      |
+| 2 | Data Link      |
+| 1 | Physical      |
