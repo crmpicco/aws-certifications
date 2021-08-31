@@ -66,3 +66,27 @@ OSI 7 Layer Model
 | 3 | Network      |
 | 2 | Data Link      |
 | 1 | Physical      |
+
+### Understanding ELB Error Messages
+
+5xx Error Codes - Server-side issues
+
+4xx Error Codes - Client-side issues
+
+HTTP 504 - Gateway Timeout. 
+The target failed to respond. The ELB could not establish a connection to the target.
+
+HTTP 502 - Bad gateway.
+The target host is unreachable. Check whether traffic is allowed from the load balancer subnets to the targets.
+
+HTTP 503 - Service unavailable.
+No registered targets.
+
+HTTP 400 - Bad request.
+Malformed request.
+
+HTTP 408 - Request timeout.
+The client did not send data before the idle timeout period expired.
+
+HTTP 464
+The incoming request protocol is incompatible with the target group protocol.
