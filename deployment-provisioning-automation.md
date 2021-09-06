@@ -90,3 +90,13 @@ The client did not send data before the idle timeout period expired.
 
 HTTP 464
 The incoming request protocol is incompatible with the target group protocol.
+
+### Understanding ELB Cloudwatch Metrics
+
+Metrics:
+
+* `HealthyHostCount`
+* `UnHealthyHostCount`
+* `RequestCount`
+* `TargetResponseTime`
+* HTTP Status Codes
