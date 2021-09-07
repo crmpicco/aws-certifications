@@ -100,3 +100,11 @@ Metrics:
 * `RequestCount`
 * `TargetResponseTime`
 * HTTP Status Codes
+
+### Elastic Load Balancer Access Logs
+
+Capture information relating to incoming requests to your ELB
+
+They are disabled by default
+
+They are encrypted and stored in a S3 bucket and decrypted when you access them
