@@ -108,3 +108,13 @@ Capture information relating to incoming requests to your ELB
 They are disabled by default
 
 They are encrypted and stored in a S3 bucket and decrypted when you access them
+
+## EC2 Image Builder
+
+Allows you to create EC2 images
+
+Image Pipeline - defines the configuration and end-to-end process of building images
+
+Image Recipe - Image builder creates a recipe for each image, which can be shared, version-controlled
+
+Build components - the software components to include in the image
