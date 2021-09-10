@@ -118,3 +118,11 @@ Image Pipeline - defines the configuration and end-to-end process of building im
 Image Recipe - Image builder creates a recipe for each image, which can be shared, version-controlled
 
 Build components - the software components to include in the image
+
+Step 1: Base OS - provide a base OS image, e.g. Amazon Linux 2 AMI
+
+Step 2: Software - define the software to install, e.g. Python, Node.js, security updates etc
+
+Step 3: Test - run tests on the new image, e.g. does it boot?
+
+Step 4: Distribute - distribute the image to the region(s) of your choice
