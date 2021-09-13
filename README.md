@@ -2,3 +2,4 @@
 
 # AWS Certified SysOps Administrator - Associate (SOA-C02)
 
+[Deployment, Provisioning & Automation](https://github.com/crmpicco/aws-certifications/blob/main/deployment-provisioning-automation.md)

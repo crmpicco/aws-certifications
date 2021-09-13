@@ -126,3 +126,21 @@ Step 2: Software - define the software to install, e.g. Python, Node.js, securit
 Step 3: Test - run tests on the new image, e.g. does it boot?
 
 Step 4: Distribute - distribute the image to the region(s) of your choice
+
+## CloudFormation
+
+IaC - Infrastructure as Code
+
+Templates can be YAML or JSON files
+
+**Template:**
+
+Parameters - Input custom values
+
+Conditions - e.g. provision resources based on environment
+
+Resources - describes the AWS resources that CloudFormation will create (mandatory)
+
+Mapping - allows you to create custom mappings like Region-AMI
+
+Transform - allows you to reference code located in S3, e.g Lambda code or reusable snippets of CloudFormation code 
