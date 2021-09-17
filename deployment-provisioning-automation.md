@@ -133,7 +133,7 @@ IaC - Infrastructure as Code
 
 Templates can be YAML or JSON files
 
-**Template:**
+### Template
 
 Parameters - Input custom values
 
@@ -143,4 +143,15 @@ Resources - describes the AWS resources that CloudFormation will create (mandato
 
 Mapping - allows you to create custom mappings like Region-AMI
 
-Transform - allows you to reference code located in S3, e.g Lambda code or reusable snippets of CloudFormation code 
+Transform - allows you to reference code located in S3, e.g Lambda code or reusable snippets of CloudFormation code
+
+### Common Errors
+
+Use the console to view the status of your stack and error messages.
+
+IAM - insufficient permissions
+
+Limits - resource limit exceeded, e.g. 20 EC2 instance limit
+
+Failed rollback (`UPDATE_ROLLBACK_FAILED`) - CloudFormation will rollback to the previous state if a CloudFormation operation fails, i.e. if `create-stack` or `update-stack` do not work as planned.
+
