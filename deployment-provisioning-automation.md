@@ -37,7 +37,7 @@ sc1 - Cold HDD
 
 Public-facing instance which enables you to SSH or RDP to your private instances from an untrusted network
 
-Located in a public subnet and is reeachable from the internet
+Located in a public subnet and is reachable from the internet
 
 Security hardened with unnecessary services removed
 
@@ -155,3 +155,10 @@ Limits - resource limit exceeded, e.g. 20 EC2 instance limit
 
 Failed rollback (`UPDATE_ROLLBACK_FAILED`) - CloudFormation will rollback to the previous state if a CloudFormation operation fails, i.e. if `create-stack` or `update-stack` do not work as planned.
 
+### CloudFormation StackSets
+
+Allow you to create, delete and update your stacks accross multiple AWS accounts and regions using a single operation
+
+You will need Cross-Account Roles to do so
+
+Resource Access Manager - will allow you to share resources with other accounts, e.g. EC2 instances, S3 buckets etc
