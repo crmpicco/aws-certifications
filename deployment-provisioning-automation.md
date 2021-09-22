@@ -23,13 +23,13 @@ io2 - Provisioned IOPS SSD
 st1 - Throughput Optimized HDD
 * Low-cost HDD volume
 * Baseline throughput of 40 MB/s per TB
-* Burstable up to 250MB/s per TB
+* Burstable up to 250 MB/s per TB
 * Used for Big Data, ETL and log processing
 
 sc1 - Cold HDD
 * Lowest cost option
 * Baseline throughput of 12 MB/s per TB
-* Burstable up to 80MB/s per TB
+* Burstable up to 80 MB/s per TB
 * Used when performance is not a factor
 * Cannot be a boot volume
 
@@ -143,7 +143,7 @@ Resources - describes the AWS resources that CloudFormation will create (mandato
 
 Mapping - allows you to create custom mappings like Region-AMI
 
-Transform - allows you to reference code located in S3, e.g Lambda code or reusable snippets of CloudFormation code
+Transform - allows you to reference code located in S3, e.g. Lambda code or reusable snippets of CloudFormation code
 
 ### Common Errors
 
@@ -157,8 +157,20 @@ Failed rollback (`UPDATE_ROLLBACK_FAILED`) - CloudFormation will rollback to the
 
 ### CloudFormation StackSets
 
-Allow you to create, delete and update your stacks accross multiple AWS accounts and regions using a single operation
+Allow you to create, delete and update your stacks across multiple AWS accounts and regions using a single operation
 
 You will need Cross-Account Roles to do so
 
 Resource Access Manager - will allow you to share resources with other accounts, e.g. EC2 instances, S3 buckets etc
+
+### Best Practices
+
+IAM - control access to CloudFormation using IAM
+
+Service Limits - be aware of them. If you hit a limit, CloudFormation will fail to create your stack
+
+Avoid Manual Updates - manual changes create a mismatch between your stack template and the current state of the stack
+
+CloudTrail - log calls to CloudFormation using CloudTrail
+
+Stack Policy - a JSON document that describes what update actions can be performed on designated resources. Specify a stack policy whenever you create a stack that has critical resources.
