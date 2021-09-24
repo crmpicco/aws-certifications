@@ -186,3 +186,11 @@ It is a low risk deployment strategy
 <span style="color:green">Green</span> = New Version
 
 Rollback is fast and easy
+
+### Rolling deployments
+
+A rolling deployment allows you to make changes in batches and to deploy to only a portion of your environment rather than an all-or-nothing approach
+
+Cost effective - you can set the batch size and the minimum number of servers to keep in service
+
+Complexity - you have a mixed environment where some servers are on the old version, some are on the new version
