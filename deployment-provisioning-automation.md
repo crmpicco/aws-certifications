@@ -174,3 +174,15 @@ Avoid Manual Updates - manual changes create a mismatch between your stack templ
 CloudTrail - log calls to CloudFormation using CloudTrail
 
 Stack Policy - a JSON document that describes what update actions can be performed on designated resources. Specify a stack policy whenever you create a stack that has critical resources.
+
+### Blue/Green deployments
+
+Use this deployment strategy when you are deploying a new version of your application
+
+It is a low risk deployment strategy
+
+<span style="color:blue">Blue</span> = Current Version
+
+<span style="color:green">Green</span> = New Version
+
+Rollback is fast and easy
