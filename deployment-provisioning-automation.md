@@ -194,3 +194,13 @@ A rolling deployment allows you to make changes in batches and to deploy to only
 Cost effective - you can set the batch size and the minimum number of servers to keep in service
 
 Complexity - you have a mixed environment where some servers are on the old version, some are on the new version
+
+### Canary Deployments
+
+Deploy the new version of your application to a small number of web servers
+
+Direct only a small proportion (e.g. 10%) of customer traffic to the new version ("Canary Testing")
+
+Provides an early indication that something is wrong in your application
+
+Rolling back is easy - simply direct all customers back to the original version
