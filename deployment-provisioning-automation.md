@@ -191,7 +191,7 @@ Rollback is fast and easy
 
 A rolling deployment allows you to make changes in batches and to deploy to only a portion of your environment rather than an all-or-nothing approach
 
-Cost effective - you can set the batch size and the minimum number of servers to keep in service
+Cost-effective - you can set the batch size and the minimum number of servers to keep in service
 
 Complexity - you have a mixed environment where some servers are on the old version, some are on the new version
 
@@ -204,3 +204,13 @@ Direct only a small proportion (e.g. 10%) of customer traffic to the new version
 Provides an early indication that something is wrong in your application
 
 Rolling back is easy - simply direct all customers back to the original version
+
+### Systems Manager (SSM)
+
+Management tool - gives you visibility and control over your AWS infrastructure at scale
+
+You can automate common operational tasks on groups of instances simultaneously without having to log into each one
+
+Run Command - run operational tasks across multiple EC2 instances (e.g. stop, restart, terminate or re-size instances)
+
+Patch Manager - patch multiple EC2 instances simultaneously
