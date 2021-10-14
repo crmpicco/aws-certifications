@@ -207,10 +207,12 @@ Rolling back is easy - simply direct all customers back to the original version
 
 ### Systems Manager (SSM)
 
-Management tool - gives you visibility and control over your AWS infrastructure at scale
+Management tool - gives you visibility and control over your AWS infrastructure at scale. A suite of different management tools.
 
 You can automate common operational tasks on groups of instances simultaneously without having to log into each one
 
-Run Command - run operational tasks across multiple EC2 instances (e.g. stop, restart, terminate or re-size instances)
+#### Run Command
+Run operational tasks across multiple EC2 instances simultaneously (e.g. stop, restart, terminate or re-size instances). SSH/RDP/Bastion hosts are not required.
 
-Patch Manager - patch multiple EC2 instances simultaneously
+#### Patch Manager
+Patch multiple EC2 instances simultaneously
