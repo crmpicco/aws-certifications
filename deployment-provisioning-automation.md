@@ -216,3 +216,15 @@ Run operational tasks across multiple EC2 instances simultaneously (e.g. stop, r
 
 #### Patch Manager
 Patch multiple EC2 instances simultaneously
+
+## OpsWorks
+
+Configuration management service. Automate the configuration of your systems using code.
+
+For Chef - use AWS OpsWorks for Chef Automate
+For Puppet - use AWS OpsWorks for Puppet Enterprise
+
+### OpsWorks Stacks
+Model your application as a stack made up of different layers.
+
+Each layer (e.g. DB layer, web server layer etc) is configured using Chef recipes. These define how to configure the EC2 instances.
