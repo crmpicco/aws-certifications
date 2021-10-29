@@ -161,7 +161,7 @@ Allow you to create, delete and update your stacks across multiple AWS accounts 
 
 You will need Cross-Account Roles to do so
 
-Resource Access Manager - will allow you to share resources with other accounts, e.g. EC2 instances, S3 buckets etc
+Resource Access Manager - will allow you to share resources with other accounts, e.g. EC2 instances, S3 buckets, EC2 image builder images etc
 
 ### Best Practices
 
