@@ -109,6 +109,14 @@ They are disabled by default
 
 They are encrypted and stored in a S3 bucket and decrypted when you access them
 
+### Sticky Sessions
+
+Override the load balancing algorithm. Uses a session cookie to identify that sessions belong to the same user.
+
+Use them when your application stores session data locally on the same server.
+
+Typically used for eCommerce shopping carts, online forms, training websites where we don't want the user logged out
+
 ## EC2 Image Builder
 
 Allows you to create EC2 images
