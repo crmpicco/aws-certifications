@@ -16,7 +16,7 @@ Default EC2 host-level metrics:
 * Disk
 * Status check
 
-CloudWatch agent - allows you to define your own metrics
+CloudWatch agent - allows you to define your own operation system-level metrics
 
 All EC2 instance send key performance and health metrics to CloudWatch
 
