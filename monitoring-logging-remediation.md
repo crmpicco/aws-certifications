@@ -24,3 +24,8 @@ By default, EC2 does **not** send OS-level metrics (e.g. memory usage, processes
 
 EC2 sends metric data to CloudWatch in 5 min intervals
 
+Log Events - Event message and time stamp
+
+Log Stream - a sequence of Log Events from the same source
+
+Log Group - a group of log streams that share the same retention, monitoring and access control settings
