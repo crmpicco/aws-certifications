@@ -29,3 +29,5 @@ Log Events - Event message and time stamp
 Log Stream - a sequence of Log Events from the same source
 
 Log Group - a group of log streams that share the same retention, monitoring and access control settings
+
+Metric Filter - filter for specific phrases in your logs (e.g. warnings, errors, HTTP status codes)
